@@ -1248,57 +1248,69 @@ section {
 
   .testimonials .section-header p {
     font-size: 14px;
+  }
+
+  .testimonials .swiper {
     padding: 0 15px;
   }
 
+  .testimonials .swiper-slide {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
   .testimonials .testimonial-wrap {
-    padding: 0 10px;
+    padding: 0;
   }
 
   .testimonials .testimonial-item {
+    display: block !important;
     padding: 20px;
-    margin: 15px 0;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin: 0 0 20px 0;
     width: 100%;
     box-sizing: border-box;
   }
 
   .testimonials .testimonial-item .info-box {
-    min-width: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+    min-width: unset;
   }
 
   .testimonials .testimonial-item .testimonial-img {
     width: 70px;
     height: 70px;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     object-fit: cover;
+    border-radius: 50%;
   }
 
   .testimonials .testimonial-item h3 {
     font-size: 16px;
     margin: 0 0 5px 0;
-    width: 100%;
+    text-align: center;
   }
 
   .testimonials .testimonial-item h4 {
     font-size: 14px;
-    margin-bottom: 10px;
-    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .testimonials .testimonial-item .stars {
+    justify-content: center;
+    margin: 5px 0;
   }
 
   .testimonials .testimonial-item p {
     font-size: 14px;
-    margin: 15px 0;
     line-height: 1.6;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
   .testimonials .testimonial-item .quote-icon-left,
@@ -1307,8 +1319,33 @@ section {
   }
 
   .testimonials .swiper-pagination {
-    margin-top: 15px;
+    margin-top: 20px;
+    position: relative;
   }
+
+  .testimonials .swiper-wrapper {
+    padding: 0;
+  }
+}
+
+.testimonials .testimonial-item {
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 30px 10px;
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.testimonials .testimonial-item .info-box {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars {
+  display: flex;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
